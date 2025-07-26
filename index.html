@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>TaskFlow</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>TaskFlow</h1>
+        <button class="addTaskBtn">+ Add Task</button>
+    </div>
+    <div class="container">
+        <div class="section" id="column-1">
+            <div class="section-head">
+                <h3>Todo</h3>
+                <p>Filter </p>
+            </div>
+            <div class="task-list" id="todo" >
+
+
+            </div>
+        </div>
+        <div class="section" id="column-2">
+            <div class="section-head">
+                <h3>In Progress</h3>
+                <p>Filter </p>
+            </div>
+            <div class="task-list" target-id="in-progress" > 
+
+            </div>
+        </div>
+        <div class="section" id="column-3">
+            <div class="section-head">
+                <h3>Under Review</h3>
+                <p>Filter </p>
+            </div>
+            <div class="task-list" target-id="under-review" >
+            </div>
+        </div>
+        <div class="section" id="column-4">
+            <div class="section-head">
+                <h3>Finished</h3>
+                <p>Filter </p>
+            </div>
+            <div class="task-list" target-id="finished" >
+
+            </div>
+        </div>
+
+    </div>
+    <div class="modal inactive">
+        <div class="form">
+            <div class="form-head">
+                <h2>Add new task</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <form action="">
+                <input type="text" name="" id="newTask" placeholder="Enter your task" required>
+                <input type="text" name="" id="desc" placeholder="Add Description" required>
+                <select name="" id="priority" required>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="date" name="" id="date" required>
+                <button id="submitTask" type="button">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
