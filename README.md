@@ -23,8 +23,11 @@
 ## 📂 Project Structure
 
 taskflow/
+
 ├── index.html # Main HTML file
+
 ├── style.css # CSS styles for layout and design
+
 └── script.js # JS for task handling and drag/drop
 
 ## 💡 Inspiration
